@@ -6,7 +6,11 @@ iOS代码防重工具
 
 ## 使用说明：
 1、配置好node环境（项目基于node16开发）；
+
 2、clone代码到本地；
+
 3、打开终端，输入：node <path_to_this_project_root>/index.js --project=<target_project_root> ；
+
 3.1、path_to_this_project_root：node-ios-mixer目录；
+
 3.2、target_project_root：ios项目目录；
