@@ -1,0 +1,28 @@
+{
+  "name": "ios-mixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pkg:win": "pkg . -t node16-win-arm64 -o ios-mixer-win --debug",
+    "pkg:mac": "pkg . -t node16-macos-x64 -o ios-mixer-mac --debug",
+    "pkg:linux": "pkg . -t node16-linux-arm64 -o ios-mixer-linux --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "linq": "^3.2.4",
+    "string-format": "^2.0.0"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/swagger-ui-dist",
+      "node_modules/swagger-ui-express",
+      "dist/migrations",
+      "english-words/words_dictionary.json"
+    ]
+  }
+}
