@@ -177,7 +177,6 @@ function processConfigParam() {
         if (!hasValue(cmdParams,v)) {
             throw new Error(`缺少必选参数：--${v}`);
         }
-        processConfigItem()
     });
     //配置上下文配置变量
     params.forEach(v=>processConfigItem(v.cmd,v.config));
